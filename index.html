@@ -438,40 +438,7 @@
      <script src="js/wow.min.js"></script>
      <script src="js/custom.js"></script>
      <!-- AOS Script -->
-     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-     <script>
-          AOS.init();
-     </script>
-<script>
-     // Typed instance for the first paragraph
-     var typed1 = new Typed("#typed-paragraph1", {
-       strings: [
-         "With over 1.8 years of professional experience in web development, I specialize in technologies like PHP, Laravel, CodeIgniter, HTML, CSS, JavaScript and Wordpress. My background includes developing and maintaining web applications for diverse projects. I have a solid foundation in both frontend and backend development, working with tools like Bootstrap, MySQL, and various API integrations."
-       ],
-       typeSpeed: 40,        // Speed in milliseconds for typing each character
-       backSpeed: 0,         // No backspace effect required
-       showCursor: false,    // Hide the blinking cursor if not needed
-       onComplete: function() {
-         // After first paragraph finishes, start the next one
-         typed2.start();
-       }
-     });
-   
-     // Initially, don't auto-start the second paragraph
-     var typed2 = new Typed("#typed-paragraph2", {
-       strings: [
-         "I am driven by the challenge of creating efficient and scalable web solutions and am eager to bring my expertise to new and dynamic projects. Let's connect and discuss how my skills can contribute to your next web development endeavor."
-       ],
-       typeSpeed: 40,
-       backSpeed: 0,
-       showCursor: false,
-       startDelay: 500  // Optional delay if you want a pause before starting
-     });
-   
-     // Stop auto-starting the second one; we'll trigger it via typed1's onComplete.
-     typed2.stop();
-   </script>
-   
+     
 </body>
 
 </html>
