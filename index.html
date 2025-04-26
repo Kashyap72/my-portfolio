@@ -15,14 +15,18 @@
      <link rel="stylesheet" href="css/font-awesome.min.css">
      <link rel="stylesheet" href="css/templatemo-style.css">
      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+     <!-- AOS Animation Library -->
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <style>
-     .color-black{
-          color:black
+     .color-black {
+          color: black
      }
 </style>
+
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-     <!-- PRE LOADER --> 
+     <!-- PRE LOADER -->
      <div class="preloader">
           <div class="spinner">
                <span class="spinner-rotate"></span>
@@ -55,23 +59,28 @@
      <section id="home" class="parallax-section">
           <div class="container">
                <div class="row">
-                    <div class="col-md-6 col-sm-6">
+                    <!-- Image slides in from the left -->
+                    <div class="col-md-6 col-sm-6" data-aos="slide-right" data-aos-duration="1000">
                          <div class="home-img"></div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+          
+                    <!-- Text content slides in from the right -->
+                    <div class="col-md-6 col-sm-6" data-aos="slide-left" data-aos-duration="1000">
                          <div class="home-thumb">
                               <div class="section-title">
-                                   <!-- <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my Portfolio</h4> -->
-                                   <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Priya
-                                             kashyap</strong></h1>
-                                   <p class="color-black">With over 1.8 years of professional experience in web development, I specialize in
-                                        technologies like PHP, Laravel, CodeIgniter, HTML, CSS,JavaScript and Wordpress. My
-                                        background includes developing and maintaining web applications for diverse
-                                        projects. I have a solid foundation in both frontend and backend development,
-                                        working with tools like Bootstrap, MySQL, and various API integrations.</p>
-                                   <p class="color-black">I am driven by the challenge of creating efficient and scalable web solutions and
-                                        am eager to bring my expertise to new and dynamic projects. Let's connect and
-                                        discuss how my skills can contribute to your next web development endeavor.</p>
+                                   <h1 class="wow fadeInUp" data-wow-delay="0.6s">
+                                        Hello, I am <strong>Priya kashyap</strong>
+                                   </h1>
+                                   <p class="color-black">With over 1.8 years of professional experience in web
+                                        development, I specialize in technologies like PHP, Laravel, CodeIgniter, HTML, CSS,
+                                        JavaScript and Wordpress. My background includes developing and maintaining web
+                                        applications for diverse projects. I have a solid foundation in both frontend and
+                                        backend development, working with tools like Bootstrap, MySQL, and various API
+                                        integrations.</p>
+                                   <p class="color-black">I am driven by the challenge of creating efficient and scalable
+                                        web solutions and am eager to bring my expertise to new and dynamic projects. Let's
+                                        connect and discuss how my skills can contribute to your next web development
+                                        endeavor.</p>
                                    <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success"
                                         data-wow-delay="1.4s">Get Started</a>
                               </div>
@@ -79,7 +88,7 @@
                     </div>
                </div>
           </div>
-     </section>
+          
      <!-- About Section -->
      <section id="about" class="parallax-section">
           <div class="container">
@@ -91,7 +100,8 @@
                                    <p class="color-yellow">Software Developer with a focus on Web Development</p>
                               </div>
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <p class="color-black"> To secure a challenging position in a reputable organization to expand my
+                                   <p class="color-black"> To secure a challenging position in a reputable organization
+                                        to expand my
                                         learning, knowledge, and skills. Interested in the role of a Software Developer
                                         where I can contribute my analytical skills and knowledge acquired by my degree
                                         and work experience in Software Engineering.</p>
@@ -159,91 +169,98 @@
      </section>
 
      <!-- Service Section -->
-<section id="service" class="parallax-section">
-     <div class="container">
-         <div class="row">
-             <!-- First Row -->
-             <div class="bg-yellow col-md-3 col-sm-6">
-                 <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
-                     <i class="fa fa-desktop"></i>
-                     <a href="https://www.mjrinsuranceservices.com/" target="_blank">
-                         <h3 class="color-white">Mjr Insurance</h3>
-                         <p class="color-white">This is the NGO Website. Using CodeIgniter 4 and MySQL, I worked as a frontend and backend Developer.</p>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-3 col-sm-6">
-                 <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
-                     <i class="fa fa-paper-plane"></i>
-                     <a href="https://www.onlinefarmer.in/gerorcy/" target="_blank">
-                         <h3 class="color-white">Online Grocery</h3>
-                         <p class="color-white">This is an Online Grocery project. I worked as a backend developer and managed APIs for the mobile app.</p>
-                     </a>
-                 </div>
-             </div>
-             <div class="bg-dark col-md-3 col-sm-6">
-                 <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
-                     <i class="fa fa-table"></i>
-                     <a href="https://brajwood.com/" target="_blank">
-                         <h3 class="color-white">Brajwood.com</h3>
-                         <p class="color-white">A CodeIgniter 4 & MySQL-based platform connecting artists, filmmakers, and entertainment professionals.</p>
-                     </a>
-                 </div>
-             </div>
-             <div class="bg-white col-md-3 col-sm-6">
-                 <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
-                     <i class="fa fa-html5"></i>
-                     <a href="https://starnewslive.in/" target="_blank">
-                         <h3>News Portal</h3>
-                         <p>Developed a dynamic news portal using CodeIgniter 4 and MySQL, featuring real-time news updates with an admin panel.</p>
-                     </a>
-                 </div>
-             </div>
-         </div> <!-- End First Row -->
- 
-         <div class="row">
-             <!-- Second Row -->
-             <div class="bg-white col-md-3 col-sm-6">
-                 <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
-                     <i class="fa fa-html5"></i>
-                     <a href="https://contacts.matrixwebstudio.com/" target="_blank">
-                         <h3>Contact Management System</h3>
-                         <p>Efficiently store, manage, and organize contacts with secure data handling.</p>
-                     </a>
-                 </div>
-             </div>
-             <div class="bg-yellow col-md-3 col-sm-6">
-                 <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
-                     <i class="fa fa-graduation-cap"></i>
-                     <a href="https://www.saraswatiias.com/" target="_blank">
-                         <h3 class="color-white">SARASWATI IAS</h3>
-                         <p class="color-white">A top Civil Services coaching institute. Developed in WordPress using Elementor.</p>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-3 col-sm-6">
-                 <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
-                     <i class="fa fa-leaf"></i>
-                     <a href="https://theswastikayurvedaonline.com/" target="_blank">
-                         <h3 class="color-white">Swastik Ayurveda</h3>
-                         <p class="color-white">An Ayurvedic medicine website for online orders. Built with WordPress & Elementor.</p>
-                     </a>
-                 </div>
-             </div>
-             <div class="bg-dark col-md-3 col-sm-6">
-                 <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
-                     <i class="fa fa-table"></i>
-                     <a href="https://finestkisanudyog.com/" target="_blank">
-                         <h3 class="color-white">Finest Kisan Udyog</h3>
-                         <p class="color-white">A premium mustard oil & jaggery platform. Developed in Core PHP with an easy ordering system.</p>
-                     </a>
-                 </div>
-             </div>
-         </div> <!-- End Second Row -->
- 
-     </div>
- </section>
- 
+     <section id="service" class="parallax-section">
+          <div class="container">
+               <div class="row">
+                    <!-- First Row -->
+                    <div class="bg-yellow col-md-3 col-sm-6">
+                         <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                              <i class="fa fa-desktop"></i>
+                              <a href="https://www.mjrinsuranceservices.com/" target="_blank">
+                                   <h3 class="color-white">Mjr Insurance</h3>
+                                   <p class="color-white">This is the NGO Website. Using CodeIgniter 4 and MySQL, I
+                                        worked as a frontend and backend Developer.</p>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                              <i class="fa fa-paper-plane"></i>
+                              <a href="https://www.onlinefarmer.in/gerorcy/" target="_blank">
+                                   <h3 class="color-white">Online Grocery</h3>
+                                   <p class="color-white">This is an Online Grocery project. I worked as a backend
+                                        developer and managed APIs for the mobile app.</p>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="bg-dark col-md-3 col-sm-6">
+                         <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
+                              <i class="fa fa-table"></i>
+                              <a href="https://brajwood.com/" target="_blank">
+                                   <h3 class="color-white">Brajwood.com</h3>
+                                   <p class="color-white">A CodeIgniter 4 & MySQL-based platform connecting artists,
+                                        filmmakers, and entertainment professionals.</p>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="bg-white col-md-3 col-sm-6">
+                         <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
+                              <i class="fa fa-html5"></i>
+                              <a href="https://starnewslive.in/" target="_blank">
+                                   <h3>News Portal</h3>
+                                   <p>Developed a dynamic news portal using CodeIgniter 4 and MySQL, featuring real-time
+                                        news updates with an admin panel.</p>
+                              </a>
+                         </div>
+                    </div>
+               </div> <!-- End First Row -->
+
+               <div class="row">
+                    <!-- Second Row -->
+                    <div class="bg-white col-md-3 col-sm-6">
+                         <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
+                              <i class="fa fa-html5"></i>
+                              <a href="https://contacts.matrixwebstudio.com/" target="_blank">
+                                   <h3>Contact Management System</h3>
+                                   <p>Efficiently store, manage, and organize contacts with secure data handling.</p>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="bg-yellow col-md-3 col-sm-6">
+                         <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                              <i class="fa fa-graduation-cap"></i>
+                              <a href="https://www.saraswatiias.com/" target="_blank">
+                                   <h3 class="color-white">SARASWATI IAS</h3>
+                                   <p class="color-white">A top Civil Services coaching institute. Developed in
+                                        WordPress using Elementor.</p>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                              <i class="fa fa-leaf"></i>
+                              <a href="https://theswastikayurvedaonline.com/" target="_blank">
+                                   <h3 class="color-white">Swastik Ayurveda</h3>
+                                   <p class="color-white">An Ayurvedic medicine website for online orders. Built with
+                                        WordPress & Elementor.</p>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="bg-dark col-md-3 col-sm-6">
+                         <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
+                              <i class="fa fa-table"></i>
+                              <a href="https://finestkisanudyog.com/" target="_blank">
+                                   <h3 class="color-white">Finest Kisan Udyog</h3>
+                                   <p class="color-white">A premium mustard oil & jaggery platform. Developed in Core
+                                        PHP with an easy ordering system.</p>
+                              </a>
+                         </div>
+                    </div>
+               </div> <!-- End Second Row -->
+
+          </div>
+     </section>
+
      <!-- Experience Section -->
      <section id="experience" class="parallax-section">
           <div class="container">
@@ -267,10 +284,8 @@
                                         <i class="fa fa-laptop"></i>
                                    </div>
                                    <div class="media-body">
-                                        <h3 class="media-heading">Web Developer at SIB Infotech <small>May 2023 -
-                                             Oct 2024</small></h3>
-                                        <p class="color-white">Currently working on a web development project using
-                                             CodeIgniter 4.</p>
+                                        <h3 class="media-heading">Web Developer at SIB Infotech <small>May 2023 - Nov 2024</small></h3>
+                                        <p class="color-white">Currently working on a web development project using  CodeIgniter 4.</p>
                                    </div>
                               </div>
 
@@ -279,8 +294,7 @@
                                         <i class="fa fa-laptop"></i>
                                    </div>
                                    <div class="media-body">
-                                        <h3 class="media-heading">Web Developer at Matrix Web Studio <small>May 2023 -
-                                                  Present</small></h3>
+                                        <h3 class="media-heading">Web Developer at Matrix Web Studio <small>Dec 2024 -  Present</small></h3>
                                         <p class="color-white">Currently working on a web development project using
                                              CodeIgniter 4 and Wordpress.</p>
                                    </div>
@@ -342,7 +356,8 @@
                          <h2 class="wow fadeInUp" data-wow-delay="0.8s">"Priya Kashyap's web development skills are
                               exceptional. Her designs are not only visually impressive but also highly functional."
                          </h2>
-                         <p class="wow fadeInUp color-white" data-wow-delay="1s">"Highly recommended for any web project due to her
+                         <p class="wow fadeInUp color-white" data-wow-delay="1s">"Highly recommended for any web project
+                              due to her
                               innovative approach and technical proficiency."</p>
                     </div>
                </div>
@@ -424,6 +439,41 @@
      <script src="js/smoothscroll.js"></script>
      <script src="js/wow.min.js"></script>
      <script src="js/custom.js"></script>
+     <!-- AOS Script -->
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+     <script>
+          AOS.init();
+     </script>
+<script>
+     // Typed instance for the first paragraph
+     var typed1 = new Typed("#typed-paragraph1", {
+       strings: [
+         "With over 1.8 years of professional experience in web development, I specialize in technologies like PHP, Laravel, CodeIgniter, HTML, CSS, JavaScript and Wordpress. My background includes developing and maintaining web applications for diverse projects. I have a solid foundation in both frontend and backend development, working with tools like Bootstrap, MySQL, and various API integrations."
+       ],
+       typeSpeed: 40,        // Speed in milliseconds for typing each character
+       backSpeed: 0,         // No backspace effect required
+       showCursor: false,    // Hide the blinking cursor if not needed
+       onComplete: function() {
+         // After first paragraph finishes, start the next one
+         typed2.start();
+       }
+     });
+   
+     // Initially, don't auto-start the second paragraph
+     var typed2 = new Typed("#typed-paragraph2", {
+       strings: [
+         "I am driven by the challenge of creating efficient and scalable web solutions and am eager to bring my expertise to new and dynamic projects. Let's connect and discuss how my skills can contribute to your next web development endeavor."
+       ],
+       typeSpeed: 40,
+       backSpeed: 0,
+       showCursor: false,
+       startDelay: 500  // Optional delay if you want a pause before starting
+     });
+   
+     // Stop auto-starting the second one; we'll trigger it via typed1's onComplete.
+     typed2.stop();
+   </script>
+   
 </body>
 
 </html>
